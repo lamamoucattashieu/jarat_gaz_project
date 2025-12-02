@@ -1,13 +1,11 @@
-// protocol.h
 #pragma once
 
 #include <stdint.h>
 #include <time.h>
-
-
+#include "common.h" // FIX: Include common.h to get TruckInfo and PingMsg definitions
 
 // Maximum length for Truck ID, User ID (plus one for the null terminator)
-#define MAX_ID_LEN 16 
+// #define MAX_ID_LEN 16 // MAX_ID_LEN is already defined in common.h
 
 // Maximum length for the full message buffer (Heartbeat, Ping, or ACK)
 // This should be large enough to hold the longest formatted message.
@@ -15,29 +13,8 @@
 
 
 // --- Data Structures ---
-
-/**
- * @brief Structure for Truck Heartbeat/Location Information.
- * Used for UDP Multicast broadcasts (HB message).
- */
-typedef struct {
-    char id[MAX_ID_LEN]; // Truck identifier (e.g., "T101")
-    double lat;          // Latitude (e.g., 32.000000)
-    double lon;          // Longitude (e.g., 35.900000)
-    int tcp_port;        // TCP port where the truck listens for PINGs (e.g., 8080)
-} TruckInfo;
-
-
-/**
- * @brief Structure for Ping Message (Service Request).
- * Used for TCP communication (PING message).
- */
-typedef struct {
-    char truck_id[MAX_ID_LEN]; // Target Truck ID
-    char user_id[MAX_ID_LEN];  // Resident User ID (e.g., "U5555")
-    char addr[128];            // Resident's street address or location (e.g., "Amman St 24")
-    char note[64];             // Optional note (e.g., "Need 2 cylinders large")
-} PingMsg;
+// FIX: Removed duplicate struct definitions (TruckInfo and PingMsg)
+// They are now pulled from common.h via the include above.
 
 
 // --- Function Prototypes (Serialization / Deserialization) ---
