@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/mnt/c/Users/ASUS/Jarat_ghaz/src/truck.c" "CMakeFiles/truck.dir/src/truck.c.o" "gcc" "CMakeFiles/truck.dir/src/truck.c.o.d"
+  "/home/moucattash/programming_project/Jarat_ghaz/src/truck.c" "CMakeFiles/truck.dir/src/truck.c.o" "gcc" "CMakeFiles/truck.dir/src/truck.c.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

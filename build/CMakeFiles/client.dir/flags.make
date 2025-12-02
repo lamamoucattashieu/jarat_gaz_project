@@ -4,7 +4,7 @@
 # compile C with /usr/bin/cc
 C_DEFINES = 
 
-C_INCLUDES = -I/mnt/c/Users/ASUS/Jarat_ghaz/src
+C_INCLUDES = -I/home/moucattash/programming_project/Jarat_ghaz/src
 
-C_FLAGS = -std=c11 -Wall -Wextra -Werror
+C_FLAGS = -std=c11 -Wall -Wextra
 

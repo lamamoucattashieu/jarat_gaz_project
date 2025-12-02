@@ -1,4 +1,5 @@
-CMakeFiles/core.dir/src/util.c.o: /mnt/c/Users/ASUS/Jarat_ghaz/src/util.c \
+CMakeFiles/core.dir/src/util.c.o: \
+ /home/moucattash/programming_project/Jarat_ghaz/src/util.c \
  /usr/include/stdc-predef.h /usr/include/math.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/features-time64.h \
@@ -65,4 +66,8 @@ CMakeFiles/core.dir/src/util.c.o: /mnt/c/Users/ASUS/Jarat_ghaz/src/util.c \
  /usr/include/errno.h /usr/include/x86_64-linux-gnu/bits/errno.h \
  /usr/include/linux/errno.h /usr/include/x86_64-linux-gnu/asm/errno.h \
  /usr/include/asm-generic/errno.h /usr/include/asm-generic/errno-base.h \
- /usr/include/string.h /mnt/c/Users/ASUS/Jarat_ghaz/src/util.h
+ /usr/include/string.h /usr/include/stdlib.h \
+ /usr/include/x86_64-linux-gnu/bits/waitflags.h \
+ /usr/include/x86_64-linux-gnu/bits/waitstatus.h \
+ /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
+ /home/moucattash/programming_project/Jarat_ghaz/src/util.h

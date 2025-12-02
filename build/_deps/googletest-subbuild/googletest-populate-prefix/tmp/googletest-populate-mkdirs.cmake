@@ -4,19 +4,19 @@
 cmake_minimum_required(VERSION 3.5)
 
 file(MAKE_DIRECTORY
-  "/mnt/c/Users/ASUS/Jarat_ghaz/build/_deps/googletest-src"
-  "/mnt/c/Users/ASUS/Jarat_ghaz/build/_deps/googletest-build"
-  "/mnt/c/Users/ASUS/Jarat_ghaz/build/_deps/googletest-subbuild/googletest-populate-prefix"
-  "/mnt/c/Users/ASUS/Jarat_ghaz/build/_deps/googletest-subbuild/googletest-populate-prefix/tmp"
-  "/mnt/c/Users/ASUS/Jarat_ghaz/build/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp"
-  "/mnt/c/Users/ASUS/Jarat_ghaz/build/_deps/googletest-subbuild/googletest-populate-prefix/src"
-  "/mnt/c/Users/ASUS/Jarat_ghaz/build/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp"
+  "/home/moucattash/programming_project/Jarat_ghaz/build/_deps/googletest-src"
+  "/home/moucattash/programming_project/Jarat_ghaz/build/_deps/googletest-build"
+  "/home/moucattash/programming_project/Jarat_ghaz/build/_deps/googletest-subbuild/googletest-populate-prefix"
+  "/home/moucattash/programming_project/Jarat_ghaz/build/_deps/googletest-subbuild/googletest-populate-prefix/tmp"
+  "/home/moucattash/programming_project/Jarat_ghaz/build/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp"
+  "/home/moucattash/programming_project/Jarat_ghaz/build/_deps/googletest-subbuild/googletest-populate-prefix/src"
+  "/home/moucattash/programming_project/Jarat_ghaz/build/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp"
 )
 
 set(configSubDirs )
 foreach(subDir IN LISTS configSubDirs)
-    file(MAKE_DIRECTORY "/mnt/c/Users/ASUS/Jarat_ghaz/build/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/${subDir}")
+    file(MAKE_DIRECTORY "/home/moucattash/programming_project/Jarat_ghaz/build/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/${subDir}")
 endforeach()
 if(cfgdir)
-  file(MAKE_DIRECTORY "/mnt/c/Users/ASUS/Jarat_ghaz/build/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp${cfgdir}") # cfgdir has leading slash
+  file(MAKE_DIRECTORY "/home/moucattash/programming_project/Jarat_ghaz/build/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp${cfgdir}") # cfgdir has leading slash
 endif()

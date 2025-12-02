@@ -54,10 +54,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /mnt/c/Users/ASUS/Jarat_ghaz
+CMAKE_SOURCE_DIR = /home/moucattash/programming_project/Jarat_ghaz
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /mnt/c/Users/ASUS/Jarat_ghaz/build
+CMAKE_BINARY_DIR = /home/moucattash/programming_project/Jarat_ghaz/build
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -140,14 +140,14 @@ _deps/googletest-build/googletest/clean: _deps/googletest-build/googletest/CMake
 CMakeFiles/core.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/core.dir/build.make CMakeFiles/core.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/core.dir/build.make CMakeFiles/core.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/mnt/c/Users/ASUS/Jarat_ghaz/build/CMakeFiles --progress-num=3,4,5,6,7,8 "Built target core"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/moucattash/programming_project/Jarat_ghaz/build/CMakeFiles --progress-num=3,4,5,6,7,8 "Built target core"
 .PHONY : CMakeFiles/core.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/core.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/ASUS/Jarat_ghaz/build/CMakeFiles 6
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/moucattash/programming_project/Jarat_ghaz/build/CMakeFiles 6
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/core.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/ASUS/Jarat_ghaz/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/moucattash/programming_project/Jarat_ghaz/build/CMakeFiles 0
 .PHONY : CMakeFiles/core.dir/rule
 
 # Convenience name for target.
@@ -166,14 +166,14 @@ CMakeFiles/core.dir/clean:
 CMakeFiles/truck.dir/all: CMakeFiles/core.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/truck.dir/build.make CMakeFiles/truck.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/truck.dir/build.make CMakeFiles/truck.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/mnt/c/Users/ASUS/Jarat_ghaz/build/CMakeFiles --progress-num=19,20 "Built target truck"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/moucattash/programming_project/Jarat_ghaz/build/CMakeFiles --progress-num=19,20 "Built target truck"
 .PHONY : CMakeFiles/truck.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/truck.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/ASUS/Jarat_ghaz/build/CMakeFiles 8
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/moucattash/programming_project/Jarat_ghaz/build/CMakeFiles 8
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/truck.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/ASUS/Jarat_ghaz/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/moucattash/programming_project/Jarat_ghaz/build/CMakeFiles 0
 .PHONY : CMakeFiles/truck.dir/rule
 
 # Convenience name for target.
@@ -192,14 +192,14 @@ CMakeFiles/truck.dir/clean:
 CMakeFiles/client.dir/all: CMakeFiles/core.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/mnt/c/Users/ASUS/Jarat_ghaz/build/CMakeFiles --progress-num=1,2 "Built target client"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/moucattash/programming_project/Jarat_ghaz/build/CMakeFiles --progress-num=1,2 "Built target client"
 .PHONY : CMakeFiles/client.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/client.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/ASUS/Jarat_ghaz/build/CMakeFiles 8
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/moucattash/programming_project/Jarat_ghaz/build/CMakeFiles 8
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/client.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/ASUS/Jarat_ghaz/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/moucattash/programming_project/Jarat_ghaz/build/CMakeFiles 0
 .PHONY : CMakeFiles/client.dir/rule
 
 # Convenience name for target.
@@ -220,14 +220,14 @@ CMakeFiles/test_all.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest.
 CMakeFiles/test_all.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_all.dir/build.make CMakeFiles/test_all.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_all.dir/build.make CMakeFiles/test_all.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/mnt/c/Users/ASUS/Jarat_ghaz/build/CMakeFiles --progress-num=17,18 "Built target test_all"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/moucattash/programming_project/Jarat_ghaz/build/CMakeFiles --progress-num=17,18 "Built target test_all"
 .PHONY : CMakeFiles/test_all.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/test_all.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/ASUS/Jarat_ghaz/build/CMakeFiles 12
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/moucattash/programming_project/Jarat_ghaz/build/CMakeFiles 12
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/test_all.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/ASUS/Jarat_ghaz/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/moucattash/programming_project/Jarat_ghaz/build/CMakeFiles 0
 .PHONY : CMakeFiles/test_all.dir/rule
 
 # Convenience name for target.
@@ -246,14 +246,14 @@ CMakeFiles/test_all.dir/clean:
 _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest.dir/all
 	$(MAKE) $(MAKESILENT) -f _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/build.make _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/depend
 	$(MAKE) $(MAKESILENT) -f _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/build.make _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/mnt/c/Users/ASUS/Jarat_ghaz/build/CMakeFiles --progress-num=9,10 "Built target gmock"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/moucattash/programming_project/Jarat_ghaz/build/CMakeFiles --progress-num=9,10 "Built target gmock"
 .PHONY : _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/all
 
 # Build rule for subdir invocation for target.
 _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/ASUS/Jarat_ghaz/build/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/moucattash/programming_project/Jarat_ghaz/build/CMakeFiles 4
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/ASUS/Jarat_ghaz/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/moucattash/programming_project/Jarat_ghaz/build/CMakeFiles 0
 .PHONY : _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/rule
 
 # Convenience name for target.
@@ -273,14 +273,14 @@ _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/all: _deps/googletes
 _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest.dir/all
 	$(MAKE) $(MAKESILENT) -f _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/build.make _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/depend
 	$(MAKE) $(MAKESILENT) -f _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/build.make _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/mnt/c/Users/ASUS/Jarat_ghaz/build/CMakeFiles --progress-num=11,12 "Built target gmock_main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/moucattash/programming_project/Jarat_ghaz/build/CMakeFiles --progress-num=11,12 "Built target gmock_main"
 .PHONY : _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/all
 
 # Build rule for subdir invocation for target.
 _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/ASUS/Jarat_ghaz/build/CMakeFiles 6
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/moucattash/programming_project/Jarat_ghaz/build/CMakeFiles 6
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/ASUS/Jarat_ghaz/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/moucattash/programming_project/Jarat_ghaz/build/CMakeFiles 0
 .PHONY : _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/rule
 
 # Convenience name for target.
@@ -299,14 +299,14 @@ _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/clean:
 _deps/googletest-build/googletest/CMakeFiles/gtest.dir/all:
 	$(MAKE) $(MAKESILENT) -f _deps/googletest-build/googletest/CMakeFiles/gtest.dir/build.make _deps/googletest-build/googletest/CMakeFiles/gtest.dir/depend
 	$(MAKE) $(MAKESILENT) -f _deps/googletest-build/googletest/CMakeFiles/gtest.dir/build.make _deps/googletest-build/googletest/CMakeFiles/gtest.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/mnt/c/Users/ASUS/Jarat_ghaz/build/CMakeFiles --progress-num=13,14 "Built target gtest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/moucattash/programming_project/Jarat_ghaz/build/CMakeFiles --progress-num=13,14 "Built target gtest"
 .PHONY : _deps/googletest-build/googletest/CMakeFiles/gtest.dir/all
 
 # Build rule for subdir invocation for target.
 _deps/googletest-build/googletest/CMakeFiles/gtest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/ASUS/Jarat_ghaz/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/moucattash/programming_project/Jarat_ghaz/build/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/googletest-build/googletest/CMakeFiles/gtest.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/ASUS/Jarat_ghaz/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/moucattash/programming_project/Jarat_ghaz/build/CMakeFiles 0
 .PHONY : _deps/googletest-build/googletest/CMakeFiles/gtest.dir/rule
 
 # Convenience name for target.
@@ -325,14 +325,14 @@ _deps/googletest-build/googletest/CMakeFiles/gtest.dir/clean:
 _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest.dir/all
 	$(MAKE) $(MAKESILENT) -f _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/build.make _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/depend
 	$(MAKE) $(MAKESILENT) -f _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/build.make _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/mnt/c/Users/ASUS/Jarat_ghaz/build/CMakeFiles --progress-num=15,16 "Built target gtest_main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/moucattash/programming_project/Jarat_ghaz/build/CMakeFiles --progress-num=15,16 "Built target gtest_main"
 .PHONY : _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/all
 
 # Build rule for subdir invocation for target.
 _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/ASUS/Jarat_ghaz/build/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/moucattash/programming_project/Jarat_ghaz/build/CMakeFiles 4
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/ASUS/Jarat_ghaz/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/moucattash/programming_project/Jarat_ghaz/build/CMakeFiles 0
 .PHONY : _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/rule
 
 # Convenience name for target.

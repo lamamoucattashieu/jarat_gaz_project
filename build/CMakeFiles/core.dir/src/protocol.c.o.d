@@ -1,6 +1,6 @@
 CMakeFiles/core.dir/src/protocol.c.o: \
- /mnt/c/Users/ASUS/Jarat_ghaz/src/protocol.c /usr/include/stdc-predef.h \
- /usr/include/stdio.h \
+ /home/moucattash/programming_project/Jarat_ghaz/src/protocol.c \
+ /usr/include/stdc-predef.h /usr/include/stdio.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/features-time64.h \
  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
@@ -25,5 +25,15 @@ CMakeFiles/core.dir/src/protocol.c.o: \
  /usr/include/x86_64-linux-gnu/bits/floatn-common.h /usr/include/string.h \
  /usr/include/stdlib.h /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
  /usr/include/ctype.h /usr/include/x86_64-linux-gnu/bits/endian.h \
- /usr/include/x86_64-linux-gnu/bits/endianness.h \
- /mnt/c/Users/ASUS/Jarat_ghaz/src/protocol.h
+ /usr/include/x86_64-linux-gnu/bits/endianness.h /usr/include/time.h \
+ /usr/include/x86_64-linux-gnu/bits/time.h \
+ /usr/include/x86_64-linux-gnu/bits/types/clock_t.h \
+ /usr/include/x86_64-linux-gnu/bits/types/time_t.h \
+ /usr/include/x86_64-linux-gnu/bits/types/struct_tm.h \
+ /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h \
+ /home/moucattash/programming_project/Jarat_ghaz/src/protocol.h \
+ /usr/lib/gcc/x86_64-linux-gnu/13/include/stdint.h /usr/include/stdint.h \
+ /usr/include/x86_64-linux-gnu/bits/wchar.h \
+ /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
+ /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
+ /usr/include/x86_64-linux-gnu/bits/stdint-least.h

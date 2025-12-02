@@ -1,5 +1,5 @@
-if(EXISTS "/mnt/c/Users/ASUS/Jarat_ghaz/build/test_all[1]_tests.cmake")
-  include("/mnt/c/Users/ASUS/Jarat_ghaz/build/test_all[1]_tests.cmake")
+if(EXISTS "/home/moucattash/programming_project/Jarat_ghaz/build/test_all[1]_tests.cmake")
+  include("/home/moucattash/programming_project/Jarat_ghaz/build/test_all[1]_tests.cmake")
 else()
   add_test(test_all_NOT_BUILT test_all_NOT_BUILT)
 endif()

@@ -7,6 +7,7 @@
 #include <arpa/inet.h>
 #include <time.h>
 
+// Assuming these headers exist and contain necessary definitions
 #include "common.h"
 #include "net.h"
 #include "protocol.h"
@@ -47,6 +48,7 @@ static void upsert_truck(const TruckInfo *ti) {
         size_t new_cap = (trucks_cap == 0) ? 4 : trucks_cap * 2;
         TruckInfo *tmp = realloc(trucks, new_cap * sizeof(TruckInfo));
         if (!tmp) {
+            fprintf(stderr, "Error: Reallocation failed in upsert_truck.\n");
             pthread_mutex_unlock(&trucks_mu);
             return;
         }
@@ -119,14 +121,23 @@ static void list_loop(void) {
 
         size_t n = trucks_count;
         struct Row *rows = NULL;
+        
         if (n > 0) {
             rows = (struct Row *)malloc(n * sizeof(struct Row));
+            if (!rows) {
+                // BUG FIX: Handle malloc failure
+                pthread_mutex_unlock(&trucks_mu);
+                perror("malloc failed in list_loop");
+                sleep(1);
+                continue;
+            }
         }
 
         for (size_t i = 0; i < n; ++i) {
             rows[i].t = &trucks[i];
+            // Assuming haversine_km is defined and works
             rows[i].dist = haversine_km(u_lat, u_lon,
-                                        trucks[i].lat, trucks[i].lon);
+                                         trucks[i].lat, trucks[i].lon);
         }
 
         pthread_mutex_unlock(&trucks_mu);
@@ -135,7 +146,7 @@ static void list_loop(void) {
             qsort(rows, n, sizeof(struct Row), cmp_row);
         }
 
-        printf("\ntruck_id       distance_km last_seen_s tcp_port ip\n");
+        printf("\ntruck_id        distance_km last_seen_s tcp_port ip\n");
         long now = now_s();
         for (size_t i = 0; i < n; ++i) {
             TruckInfo *t = rows[i].t;
@@ -152,7 +163,7 @@ static void list_loop(void) {
             }
         }
         fflush(stdout);
-        free(rows);
+        free(rows); // Free the allocated memory
         sleep(1);
     }
 }
@@ -179,6 +190,7 @@ static int do_ping(void) {
         return 1;
     }
 
+    // Assuming tcp_connect_timeout_addr is defined and works
     int s = tcp_connect_timeout_addr(chosen.last_ip,
                                      chosen.tcp_port,
                                      2000);
@@ -189,20 +201,32 @@ static int do_ping(void) {
 
     PingMsg p;
     memset(&p, 0, sizeof(p));
+    
+    // Safety: ensure null termination after strncpy
     strncpy(p.truck_id, want_truck, MAX_ID_LEN);
+    p.truck_id[MAX_ID_LEN - 1] = '\0';
+    
     strncpy(p.user_id, user_id, MAX_ID_LEN);
-    strncpy(p.addr, addr, sizeof(p.addr) - 1);
-    strncpy(p.note, note, sizeof(p.note) - 1);
+    p.user_id[MAX_ID_LEN - 1] = '\0';
+    
+    strncpy(p.addr, addr, sizeof(p.addr));
+    p.addr[sizeof(p.addr) - 1] = '\0'; // Added explicit null termination
+    
+    strncpy(p.note, note, sizeof(p.note));
+    p.note[sizeof(p.note) - 1] = '\0'; // Added explicit null termination
 
     char line[MAX_LINE];
+    // Assuming format_ping and send_all_timeout are defined and work
     format_ping(line, sizeof(line), &p);
     send_all_timeout(s, line, strlen(line), 2000);
 
     char resp[MAX_LINE];
+    // Assuming recv_line_timeout is defined and works
     ssize_t n = recv_line_timeout(s, resp, sizeof(resp), 2000);
     if (n > 0) {
         char id[16];
         int eta, q;
+        // Assuming parse_ack is defined and works
         if (parse_ack(resp, id, &eta, &q)) {
             printf("ACK from %s: eta=%d min queued=%d\n", id, eta, q);
         } else {
@@ -226,28 +250,41 @@ int main(int argc, char **argv) {
             near_km = atof(argv[++i]);
         } else if (!strcmp(argv[i], "--truck") && i + 1 < argc) {
             strncpy(want_truck, argv[++i], MAX_ID_LEN - 1);
+            want_truck[MAX_ID_LEN - 1] = '\0'; // Safety null termination
             ping_mode = 1;
         } else if (!strcmp(argv[i], "--addr") && i + 1 < argc) {
             strncpy(addr, argv[++i], sizeof(addr) - 1);
+            addr[sizeof(addr) - 1] = '\0'; // Safety null termination
         } else if (!strcmp(argv[i], "--note") && i + 1 < argc) {
             strncpy(note, argv[++i], sizeof(note) - 1);
+            note[sizeof(note) - 1] = '\0'; // Safety null termination
         } else if (!strcmp(argv[i], "--user") && i + 1 < argc) {
             strncpy(user_id, argv[++i], MAX_ID_LEN - 1);
+            user_id[MAX_ID_LEN - 1] = '\0'; // Safety null termination
         }
     }
 
+    // Assuming udp_mc_receiver is defined and works
     if (udp_mc_receiver(MC_GROUP, MC_PORT, &mc_fd) < 0) {
         perror("udp_mc_receiver");
         return 1;
     }
 
     pthread_t tm;
-    pthread_create(&tm, NULL, th_mc, NULL);
+    // BUG FIX: Check return value of pthread_create
+    if (pthread_create(&tm, NULL, th_mc, NULL) != 0) {
+        perror("pthread_create failed for multicast receiver");
+        close(mc_fd);
+        return 1;
+    }
 
     if (ping_mode) {
         // give some time to receive at least one heartbeat
         sleep(1);
-        return do_ping();
+        int res = do_ping();
+        // Since we are exiting, we don't need to join tm, but we should free resources
+        // For a simple exit, it's fine, but in a clean shutdown, join/cancel the thread.
+        return res;
     }
 
     list_loop();

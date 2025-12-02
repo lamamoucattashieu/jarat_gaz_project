@@ -2,6 +2,7 @@
 #include <string.h>
 #include <stdlib.h>
 #include <ctype.h>
+#include <time.h> // CRITICAL: Added for time_t definition
 #include "protocol.h"
 
 
@@ -75,7 +76,4 @@ return 1;
 
 int format_ack(char *out, size_t n, const char *truck_id, int eta_min, int queued){
 return snprintf(out,n, "ACK truck_id=%s eta_min=%d queued=%d\n", truck_id, eta_min, queued);
-}
-
-
 }

@@ -1,4 +1,5 @@
-CMakeFiles/core.dir/src/gps.c.o: /mnt/c/Users/ASUS/Jarat_ghaz/src/gps.c \
+CMakeFiles/core.dir/src/gps.c.o: \
+ /home/moucattash/programming_project/Jarat_ghaz/src/gps.c \
  /usr/include/stdc-predef.h /usr/include/stdlib.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/features-time64.h \
@@ -28,4 +29,5 @@ CMakeFiles/core.dir/src/gps.c.o: /mnt/c/Users/ASUS/Jarat_ghaz/src/gps.c \
  /usr/include/x86_64-linux-gnu/bits/types/struct_tm.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h \
  /usr/include/x86_64-linux-gnu/bits/endian.h \
- /usr/include/x86_64-linux-gnu/bits/endianness.h
+ /usr/include/x86_64-linux-gnu/bits/endianness.h \
+ /home/moucattash/programming_project/Jarat_ghaz/src/gps.h

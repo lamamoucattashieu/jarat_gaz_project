@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /mnt/c/Users/ASUS/Jarat_ghaz
+CMAKE_SOURCE_DIR = /home/moucattash/programming_project/Jarat_ghaz
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /mnt/c/Users/ASUS/Jarat_ghaz/build
+CMAKE_BINARY_DIR = /home/moucattash/programming_project/Jarat_ghaz/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/core.dir/depend.make
@@ -70,74 +70,74 @@ include CMakeFiles/core.dir/progress.make
 include CMakeFiles/core.dir/flags.make
 
 CMakeFiles/core.dir/src/util.c.o: CMakeFiles/core.dir/flags.make
-CMakeFiles/core.dir/src/util.c.o: /mnt/c/Users/ASUS/Jarat_ghaz/src/util.c
+CMakeFiles/core.dir/src/util.c.o: /home/moucattash/programming_project/Jarat_ghaz/src/util.c
 CMakeFiles/core.dir/src/util.c.o: CMakeFiles/core.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/c/Users/ASUS/Jarat_ghaz/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/core.dir/src/util.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/core.dir/src/util.c.o -MF CMakeFiles/core.dir/src/util.c.o.d -o CMakeFiles/core.dir/src/util.c.o -c /mnt/c/Users/ASUS/Jarat_ghaz/src/util.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/moucattash/programming_project/Jarat_ghaz/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/core.dir/src/util.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/core.dir/src/util.c.o -MF CMakeFiles/core.dir/src/util.c.o.d -o CMakeFiles/core.dir/src/util.c.o -c /home/moucattash/programming_project/Jarat_ghaz/src/util.c
 
 CMakeFiles/core.dir/src/util.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/core.dir/src/util.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/c/Users/ASUS/Jarat_ghaz/src/util.c > CMakeFiles/core.dir/src/util.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/moucattash/programming_project/Jarat_ghaz/src/util.c > CMakeFiles/core.dir/src/util.c.i
 
 CMakeFiles/core.dir/src/util.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/core.dir/src/util.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/c/Users/ASUS/Jarat_ghaz/src/util.c -o CMakeFiles/core.dir/src/util.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/moucattash/programming_project/Jarat_ghaz/src/util.c -o CMakeFiles/core.dir/src/util.c.s
 
 CMakeFiles/core.dir/src/protocol.c.o: CMakeFiles/core.dir/flags.make
-CMakeFiles/core.dir/src/protocol.c.o: /mnt/c/Users/ASUS/Jarat_ghaz/src/protocol.c
+CMakeFiles/core.dir/src/protocol.c.o: /home/moucattash/programming_project/Jarat_ghaz/src/protocol.c
 CMakeFiles/core.dir/src/protocol.c.o: CMakeFiles/core.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/c/Users/ASUS/Jarat_ghaz/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/core.dir/src/protocol.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/core.dir/src/protocol.c.o -MF CMakeFiles/core.dir/src/protocol.c.o.d -o CMakeFiles/core.dir/src/protocol.c.o -c /mnt/c/Users/ASUS/Jarat_ghaz/src/protocol.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/moucattash/programming_project/Jarat_ghaz/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/core.dir/src/protocol.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/core.dir/src/protocol.c.o -MF CMakeFiles/core.dir/src/protocol.c.o.d -o CMakeFiles/core.dir/src/protocol.c.o -c /home/moucattash/programming_project/Jarat_ghaz/src/protocol.c
 
 CMakeFiles/core.dir/src/protocol.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/core.dir/src/protocol.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/c/Users/ASUS/Jarat_ghaz/src/protocol.c > CMakeFiles/core.dir/src/protocol.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/moucattash/programming_project/Jarat_ghaz/src/protocol.c > CMakeFiles/core.dir/src/protocol.c.i
 
 CMakeFiles/core.dir/src/protocol.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/core.dir/src/protocol.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/c/Users/ASUS/Jarat_ghaz/src/protocol.c -o CMakeFiles/core.dir/src/protocol.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/moucattash/programming_project/Jarat_ghaz/src/protocol.c -o CMakeFiles/core.dir/src/protocol.c.s
 
 CMakeFiles/core.dir/src/gps.c.o: CMakeFiles/core.dir/flags.make
-CMakeFiles/core.dir/src/gps.c.o: /mnt/c/Users/ASUS/Jarat_ghaz/src/gps.c
+CMakeFiles/core.dir/src/gps.c.o: /home/moucattash/programming_project/Jarat_ghaz/src/gps.c
 CMakeFiles/core.dir/src/gps.c.o: CMakeFiles/core.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/c/Users/ASUS/Jarat_ghaz/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/core.dir/src/gps.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/core.dir/src/gps.c.o -MF CMakeFiles/core.dir/src/gps.c.o.d -o CMakeFiles/core.dir/src/gps.c.o -c /mnt/c/Users/ASUS/Jarat_ghaz/src/gps.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/moucattash/programming_project/Jarat_ghaz/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/core.dir/src/gps.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/core.dir/src/gps.c.o -MF CMakeFiles/core.dir/src/gps.c.o.d -o CMakeFiles/core.dir/src/gps.c.o -c /home/moucattash/programming_project/Jarat_ghaz/src/gps.c
 
 CMakeFiles/core.dir/src/gps.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/core.dir/src/gps.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/c/Users/ASUS/Jarat_ghaz/src/gps.c > CMakeFiles/core.dir/src/gps.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/moucattash/programming_project/Jarat_ghaz/src/gps.c > CMakeFiles/core.dir/src/gps.c.i
 
 CMakeFiles/core.dir/src/gps.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/core.dir/src/gps.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/c/Users/ASUS/Jarat_ghaz/src/gps.c -o CMakeFiles/core.dir/src/gps.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/moucattash/programming_project/Jarat_ghaz/src/gps.c -o CMakeFiles/core.dir/src/gps.c.s
 
 CMakeFiles/core.dir/src/net.c.o: CMakeFiles/core.dir/flags.make
-CMakeFiles/core.dir/src/net.c.o: /mnt/c/Users/ASUS/Jarat_ghaz/src/net.c
+CMakeFiles/core.dir/src/net.c.o: /home/moucattash/programming_project/Jarat_ghaz/src/net.c
 CMakeFiles/core.dir/src/net.c.o: CMakeFiles/core.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/c/Users/ASUS/Jarat_ghaz/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/core.dir/src/net.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/core.dir/src/net.c.o -MF CMakeFiles/core.dir/src/net.c.o.d -o CMakeFiles/core.dir/src/net.c.o -c /mnt/c/Users/ASUS/Jarat_ghaz/src/net.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/moucattash/programming_project/Jarat_ghaz/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/core.dir/src/net.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/core.dir/src/net.c.o -MF CMakeFiles/core.dir/src/net.c.o.d -o CMakeFiles/core.dir/src/net.c.o -c /home/moucattash/programming_project/Jarat_ghaz/src/net.c
 
 CMakeFiles/core.dir/src/net.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/core.dir/src/net.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/c/Users/ASUS/Jarat_ghaz/src/net.c > CMakeFiles/core.dir/src/net.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/moucattash/programming_project/Jarat_ghaz/src/net.c > CMakeFiles/core.dir/src/net.c.i
 
 CMakeFiles/core.dir/src/net.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/core.dir/src/net.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/c/Users/ASUS/Jarat_ghaz/src/net.c -o CMakeFiles/core.dir/src/net.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/moucattash/programming_project/Jarat_ghaz/src/net.c -o CMakeFiles/core.dir/src/net.c.s
 
 CMakeFiles/core.dir/src/logger.c.o: CMakeFiles/core.dir/flags.make
-CMakeFiles/core.dir/src/logger.c.o: /mnt/c/Users/ASUS/Jarat_ghaz/src/logger.c
+CMakeFiles/core.dir/src/logger.c.o: /home/moucattash/programming_project/Jarat_ghaz/src/logger.c
 CMakeFiles/core.dir/src/logger.c.o: CMakeFiles/core.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/c/Users/ASUS/Jarat_ghaz/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/core.dir/src/logger.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/core.dir/src/logger.c.o -MF CMakeFiles/core.dir/src/logger.c.o.d -o CMakeFiles/core.dir/src/logger.c.o -c /mnt/c/Users/ASUS/Jarat_ghaz/src/logger.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/moucattash/programming_project/Jarat_ghaz/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/core.dir/src/logger.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/core.dir/src/logger.c.o -MF CMakeFiles/core.dir/src/logger.c.o.d -o CMakeFiles/core.dir/src/logger.c.o -c /home/moucattash/programming_project/Jarat_ghaz/src/logger.c
 
 CMakeFiles/core.dir/src/logger.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/core.dir/src/logger.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/c/Users/ASUS/Jarat_ghaz/src/logger.c > CMakeFiles/core.dir/src/logger.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/moucattash/programming_project/Jarat_ghaz/src/logger.c > CMakeFiles/core.dir/src/logger.c.i
 
 CMakeFiles/core.dir/src/logger.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/core.dir/src/logger.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/c/Users/ASUS/Jarat_ghaz/src/logger.c -o CMakeFiles/core.dir/src/logger.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/moucattash/programming_project/Jarat_ghaz/src/logger.c -o CMakeFiles/core.dir/src/logger.c.s
 
 # Object files for target core
 core_OBJECTS = \
@@ -157,7 +157,7 @@ libcore.a: CMakeFiles/core.dir/src/net.c.o
 libcore.a: CMakeFiles/core.dir/src/logger.c.o
 libcore.a: CMakeFiles/core.dir/build.make
 libcore.a: CMakeFiles/core.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/mnt/c/Users/ASUS/Jarat_ghaz/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking C static library libcore.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/moucattash/programming_project/Jarat_ghaz/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking C static library libcore.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/core.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/core.dir/link.txt --verbose=$(VERBOSE)
 
@@ -170,6 +170,6 @@ CMakeFiles/core.dir/clean:
 .PHONY : CMakeFiles/core.dir/clean
 
 CMakeFiles/core.dir/depend:
-	cd /mnt/c/Users/ASUS/Jarat_ghaz/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /mnt/c/Users/ASUS/Jarat_ghaz /mnt/c/Users/ASUS/Jarat_ghaz /mnt/c/Users/ASUS/Jarat_ghaz/build /mnt/c/Users/ASUS/Jarat_ghaz/build /mnt/c/Users/ASUS/Jarat_ghaz/build/CMakeFiles/core.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/moucattash/programming_project/Jarat_ghaz/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/moucattash/programming_project/Jarat_ghaz /home/moucattash/programming_project/Jarat_ghaz /home/moucattash/programming_project/Jarat_ghaz/build /home/moucattash/programming_project/Jarat_ghaz/build /home/moucattash/programming_project/Jarat_ghaz/build/CMakeFiles/core.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/core.dir/depend
 

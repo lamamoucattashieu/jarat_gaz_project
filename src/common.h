@@ -1,7 +1,7 @@
 #pragma once
 #include <time.h>
 #include <stdint.h>
-
+#include <arpa/inet.h> // CRITICAL FIX: Added to define 'struct in_addr'
 
 #define MC_GROUP "239.255.0.1"
 #define MC_PORT 5000

@@ -1,4 +1,6 @@
+#define _DEFAULT_SOURCE           // Required to expose functions like inet_aton and some structures
 #define _POSIX_C_SOURCE 200809L
+#include <sys/types.h>            // Required for basic types like socklen_t and some network structs (like ip_mreq)
 #include <string.h>
 #include <unistd.h>
 #include <arpa/inet.h>
@@ -6,9 +8,15 @@
 #include <netinet/in.h>
 #include <netinet/ip.h>
 #include <errno.h>
-#include "net.h"
-#include "util.h"
 
+// CRITICAL FIXES for non-blocking connect and select():
+#include <sys/select.h> 
+#include <sys/time.h>             // Defines struct timeval completely
+#include <fcntl.h>                // Defines constants needed for set_nonblocking
+
+#include "net.h"
+#include "util.h" 
+// ... rest of the file ...
 
 int udp_mc_sender(const char *group, uint16_t port, int *sock_out, struct sockaddr_in *addr_out){
 int s = socket(AF_INET, SOCK_DGRAM, 0); if (s<0) return -1;

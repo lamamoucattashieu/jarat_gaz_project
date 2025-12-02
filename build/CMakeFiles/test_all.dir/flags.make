@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/mnt/c/Users/ASUS/Jarat_ghaz/src -isystem /mnt/c/Users/ASUS/Jarat_ghaz/build/_deps/googletest-src/googletest/include -isystem /mnt/c/Users/ASUS/Jarat_ghaz/build/_deps/googletest-src/googletest
+CXX_INCLUDES = -I/home/moucattash/programming_project/Jarat_ghaz/src -isystem /home/moucattash/programming_project/Jarat_ghaz/build/_deps/googletest-src/googletest/include -isystem /home/moucattash/programming_project/Jarat_ghaz/build/_deps/googletest-src/googletest
 
-CXX_FLAGS = -std=c++17 -Wall -Wextra -Werror
+CXX_FLAGS = -std=c++17 -Wall -Wextra
 
