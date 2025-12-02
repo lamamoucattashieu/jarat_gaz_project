@@ -1,0 +1,1 @@
+/usr/bin/cc CMakeFiles/truck.dir/src/truck.c.o -o truck  libcore.a -lm 

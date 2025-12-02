@@ -1,0 +1,2 @@
+/usr/bin/ar qc libcore.a CMakeFiles/core.dir/src/util.c.o CMakeFiles/core.dir/src/protocol.c.o CMakeFiles/core.dir/src/gps.c.o CMakeFiles/core.dir/src/net.c.o CMakeFiles/core.dir/src/logger.c.o
+/usr/bin/ranlib libcore.a
