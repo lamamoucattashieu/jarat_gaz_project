@@ -54,12 +54,12 @@ cmake --build .
 
 **This produces two executables:**
 
-build/truck
-build/client
+'build/truck
+build/client'
 
 **Running Tests (GoogleTest)**
-cd build
-ctest --output-on-failure
+'cd build
+ctest --output-on-failure'
 
 
 GoogleTest is automatically downloaded and compiled as part of the CMake configuration.
@@ -69,13 +69,13 @@ GoogleTest is automatically downloaded and compiled as part of the CMake configu
 Because this project simulates a distributed system, two or three terminals are required.
 
 Terminal 1: Start the Truck (Server)
-cd build
-./truck --id T1 --tcp 5555 --start-lat 31.95 --start-lon 35.94
+'cd build
+./truck --id T1 --tcp 5555 --start-lat 31.95 --start-lon 35.94'
 
 
 **Expected server output:**
 
-truck T1 up: tcp=5555, mc=239.255.0.1:5000
+'truck T1 up: tcp=5555, mc=239.255.0.1:5000'
 
 
 **The truck now:**
@@ -85,8 +85,8 @@ Broadcasts heartbeats every second
 Accepts PING requests
 
 Terminal 2: Start the Client in List Mode
-cd build
-./client
+'cd build
+./client'
 
 
 **Expected output (updated every second):**
@@ -130,10 +130,9 @@ ACK from T1: eta=4 min queued=1
 
 A separate UI folder is included in the project. The UI displays truck data, client messages, acknowledgments, and system logs.
 
-If the UI is written in Python
-cd ui
-python3 ui.py
-
+Since the UI is written in Python
+'cd ui
+python3 ui.py'
 
 The UI can run in parallel with both the truck and the client programs.
 
