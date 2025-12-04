@@ -14,8 +14,7 @@
 #include <arpa/inet.h>
 #include <netinet/in.h>
 
-// CRITICAL FIX: Include common.h and protocol.h BEFORE logger.h
-// This ensures PingMsg is defined before logger.h uses it, fixing the 'sg *p' error.
+
 #include "common.h"
 #include "protocol.h"
 #include "logger.h"
@@ -40,7 +39,6 @@ static void get_timestamp_string(char *buf, size_t n, time_t ts) {
     strftime(buf, n, "%Y-%m-%d %H:%M:%S", tm);
 }
 
-// MATCHES logger.h: int logger_open(const char *path);
 int logger_open(const char *path) {
     pthread_mutex_lock(&log_mutex);
     if (log_file) fclose(log_file);
@@ -53,7 +51,7 @@ int logger_open(const char *path) {
     return success;
 }
 
-// MATCHES logger.h: void logger_close(void);
+
 void logger_close(void) {
     pthread_mutex_lock(&log_mutex);
     if (log_file) {
