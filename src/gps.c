@@ -3,7 +3,7 @@
 #include <time.h>
 #include "gps.h"
 
-// Define M_PI if it's not defined by <math.h> (for better portability)
+
 #ifndef M_PI
 #define M_PI 3.14159265358979323846
 #endif
