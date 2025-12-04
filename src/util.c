@@ -10,7 +10,7 @@
 #include <sys/socket.h>
 #include <errno.h>
 #include <string.h>
-#include <stdlib.h> // For M_PI definition, though often in math.h
+#include <stdlib.h>
 #include "util.h"
 
 
@@ -139,9 +139,6 @@ ssize_t send_all_timeout(int fd, const char *buf, size_t n, int timeout_ms){
     return (ssize_t)sent;
 }
 
-// The following functions (gps_init, gps_step) are assumed to be defined 
-// in this file or a linked file, but their definitions were not provided.
-// Their prototypes MUST be in util.h.
 /*
 void gps_init(double lat, double lon, double max_dist_km);
 void gps_step(double *lat, double *lon);
