@@ -9,29 +9,19 @@
 #include <pthread.h>
 #include <arpa/inet.h>
 #include <sys/socket.h>
-
-// --- ASSUMED EXTERNAL HEADERS ---
-// (These must define the required structs and functions)
 #include "protocol.h" 
-#include "util.h"     // Must contain gps_init, gps_step, recv_line_timeout, send_all_timeout
-#include "net.h"      // Must contain udp_mc_sender, tcp_listen
-#include "logger.h"   // Must contain logger_open, logger_log_ping, logger_close
-
-
-// --- DEFINITIONS FOR UNDEFINED CONSTANTS (Assumed to be in a config file) ---
-// If these are defined in your project headers, you can remove these lines.
+#include "util.h"    
+#include "net.h"   
+#include "logger.h" 
 #ifndef MAX_LINE
 #define MAX_LINE 256
 #endif
-
 #ifndef HB_INTERVAL_MS
 #define HB_INTERVAL_MS 1000 // 1 second heartbeat interval
 #endif
-
 #ifndef MC_GROUP
 #define MC_GROUP "225.0.0.37" // Default Multicast Group IP
 #endif
-
 #ifndef MC_PORT
 #define MC_PORT 12345         // Default Multicast Port
 #endif
